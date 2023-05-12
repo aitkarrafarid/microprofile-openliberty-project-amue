@@ -16,7 +16,7 @@ $ sudo rm -rf ./volumes-docker-compose/* # Suppression des volumes persistants
 == MAVEN
 ----
 $ mvn clean package # Suppression du target et construction de l'application
-$ java -jar backendServices/target/backendServices.jar # Lancement de fatJar/uberJar
+$ java -jar backendServices/target/backendServices.jar # Lancement du fatJar/uberJar
 ----
 
 Accès via : http://localhost:9080/openapi/ui/
