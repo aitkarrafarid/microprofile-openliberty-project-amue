@@ -9,11 +9,18 @@ v1.1, 2023-05-12
 == DOCKER-COMPOSE
 ----
 $ docker-compose up # Lancement de la stack docker-compose (postgres)
-$ docker-compose down -v # Supression des volumes locaux
+$ docker-compose down -v # Supression des conteneurs/reseaux/volumes locaux
 $ sudo rm -rf ./volumes-docker-compose/* # Suppression des volumes persistants
 ----
 
 == MAVEN
+
+=== Développement (hotswap automatique)
+----
+$ mvn liberty:dev
+----
+
+=== Production
 ----
 $ mvn clean package # Suppression du target et construction de l'application
 $ java -jar backendServices/target/backendServices.jar # Lancement du fatJar/uberJar
