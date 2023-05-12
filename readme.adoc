@@ -1,0 +1,25 @@
+= Docker
+Nom de l’auteur <farid.aitkarra@univ-lille.fr>
+v1.1, 2023-05-12
+:toc:
+:toc-title: Liste des rubriques
+
+= MicroProfile generated Applications
+
+== DOCKER-COMPOSE
+----
+$ docker-compose up
+$ docker-compose down -v
+$ sudo rm -rf ./volumes-docker-compose/*
+----
+
+== MAVEN
+----
+$ mvn clean install
+$ mvn package
+----
+
+Accès via : http://localhost:9080/openapi/ui/
+
+== (C) Copyright
+- https://start.microprofile.io
